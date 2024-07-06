@@ -10,8 +10,7 @@ const ProjectBlock: React.FC<ProjectProps> = ({ title, description, technologies
   return (
     <div className="bg-white rounded-lg shadow-md p-6 mb-6">
       <h2 className="text-gray-600 text-2xl font-bold mb-2">{title}</h2>
-      <p className="text-gray-600 text-sm mb-4">{description}</p>
-      <div className="flex flex-wrap justify-center">
+      <p className="text-gray-600 text-sm mb-4" dangerouslySetInnerHTML={{ __html: description }}></p>      <div className="flex flex-wrap justify-center">
         {technologies.map((tech, index) => (
           <span key={index} className="justify-center bg-blue-100 text-blue-800 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded">
             {tech}
@@ -31,7 +30,7 @@ const ProjectHighlight: React.FC = () => {
     },
     {
       title: "Correkt",
-      description: "Helped create a fact checking chrome extension. I helped with collecting data from news sites, setting up an auto scraper on a google cloud instance. Later on, finetinued a BERT model to differentiate statements and opinions. Since then, we have changed our directions to an AI Search engine: app.correkt.ai.",
+      description: "Helped create a fact checking chrome extension. I helped with collecting data from news sites, setting up an auto scraper on a google cloud instance. Later on, fine-tuned a BERT model to differentiate statements and opinions. Since then, we have changed our directions to an AI Search engine: <a href='https://app.correkt.ai' target='_blank' rel='noopener noreferrer'>app.correkt.ai</a>.",
       technologies: ["python", "google cloud", "machine learning", "datasets"],
     },
 

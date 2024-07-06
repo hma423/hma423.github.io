@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import tahoe from "../assets/images/tahoe.png"
 import backpacking from "../assets/images/backpacking.png";
 import waterpolo from "../assets/images/waterpolo.png";
-import surfing from "../assets/images/surfing.png"
+import surfing from "../assets/images/surfing.png";
+import skii from "../assets/images/skii.jpg";
 
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid';
 
@@ -76,15 +77,12 @@ const DualCarousel: React.FC = () => {
   const carouselData1: ImageData[] = [
     { src: tahoe, alt: "Image 1", description: "ever since i was a kid, i've enjoyed interacting with nature i.e. lake tahoe" },
     { src: backpacking, alt: "backpacking", description: "once i joined scouting, my connection to nature grew and my passion for backpacking blossomed. heres a photo of me leading my first backpacking trip! i'm holding the backapck of a fellow scout affected by altitude sickness" },
-    { src: "image3.jpg", alt: "Image 3", description: "Description for Image 3" },
-    { src: "image4.jpg", alt: "Image 4", description: "Description for Image 4" },
+    { src: skii, alt: "Image 3", description: "been skiing since my dad taught me at a young age. really good way to get your adrenaline up"},
   ];
 
   const carouselData2: ImageData[] = [
     { src: waterpolo, alt: "Image 5", description: "picked up water polo after swimming for years, started playing in high school becoming captain of the hs team. i loved the sport so much i continued to play it in college" },
     { src: surfing, alt: "Image 6", description: "whenever im in the bay, surfing is one of the activites that i look forward to most. being among the waves is just comforting for me." },
-    { src: "image7.jpg", alt: "Image 7", description: "Description for Image 7" },
-    { src: "image8.jpg", alt: "Image 8", description: "Description for Image 8" },
   ];
 
   return (
