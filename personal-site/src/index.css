@@ -32,7 +32,8 @@ h1 {
   line-height: 1.1;
 }
 
-body {
+html, body {
+  height:100%;
   background-size: 10px 10px; /* Size of each grid cell */
   /* background-image: 
     linear-gradient(to right, rgb(232, 231, 231) 1px, transparent 1px),

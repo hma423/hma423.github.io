@@ -5,7 +5,6 @@ import waterpolo from "../assets/images/waterpolo.png";
 import surfing from "../assets/images/surfing.png";
 import skii from "../assets/images/skii.jpg";
 
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid';
 
 
 interface ImageData {

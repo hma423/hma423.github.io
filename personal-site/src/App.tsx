@@ -1,12 +1,7 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import "./globals.css"
-import viteLogo from '/vite.svg'
 import './App.css'
 import { Tabs } from "./components/ui/Tabs";
-import { Document } from 'react-pdf'
-import PDFViewer from './components/PDFViewer'
-import resume from "./Resume.png";
+
 import Projectprops from "./components/Projectprops";
 import Carousel from "./components/Carosuel";
 import introimage from "./assets/images/introimage.png"
@@ -68,10 +63,10 @@ function App() {
     //   ),
     // },
   ];
-  const [count, setCount] = useState(0)
 
   return (
     <>
+    <body>
     <div className = "-mb-36">
       <h1>henry ma</h1>
       <h2>sometimes i code...</h2>
@@ -79,6 +74,7 @@ function App() {
     <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items- justify-start my-40">
       <Tabs tabs={tabs} />
     </div>
+    </body>
 
     </> 
 
